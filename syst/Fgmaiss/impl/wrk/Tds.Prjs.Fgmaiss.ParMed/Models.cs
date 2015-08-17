@@ -46,6 +46,9 @@ namespace Tds.Prjs.Fgmaiss.ParMed
                     Registration = i2;
                     words.RemoveRange(i, 3);
                     words.RemoveAt(0);
+                    while (Int32.TryParse(words[words.Count - 1], out i1) || Double.TryParse(words[words.Count - 1], out d))
+                        words.RemoveAt(words.Count - 1);
+                    words = words.Where(el => el != "5").ToList();
                     Description = String.Join(" ", words);
                     break;
                 }
@@ -84,8 +87,13 @@ namespace Tds.Prjs.Fgmaiss.ParMed
             Parsing = rawLines;
             var lines = rawLines.Where(el => el != Raw).ToList();
             var currentText = new List<String>();
-            DateTime.Parse(lines[0].Split(' ')[0]);
-            currentText.Add(lines[0]);
+            String supposedDate = lines[0].Split(' ')[0];
+            String line = lines[0];
+            if (supposedDate.Length == 9)
+                line = line.Replace(supposedDate, supposedDate + "5");
+                   
+            DateTime.Parse(supposedDate);
+            currentText.Add(line);
             var currentTransaction = new Transaction(this);
             lines.Skip(1).ToList().ForEach(el =>
             {
@@ -93,7 +101,7 @@ namespace Tds.Prjs.Fgmaiss.ParMed
                 var words = el.Split(' ');
 
                 DateTime date;
-                String supposedDate = el.Split(' ')[0];
+                supposedDate = el.Split(' ')[0];
                 bool repMark = false;
                 String rep = "";
                 if (supposedDate.Length == 9)
@@ -118,6 +126,7 @@ namespace Tds.Prjs.Fgmaiss.ParMed
                 else
                 {
                     currentText.Add(el);
+                    repMark = false;
                 }
              
             });
