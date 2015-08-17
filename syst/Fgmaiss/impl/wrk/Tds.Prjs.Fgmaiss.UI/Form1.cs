@@ -22,7 +22,7 @@ namespace Tds.Prjs.Fgmaiss.UI
         private void button1_Click(object sender, EventArgs e)
         {
             var x = new Manager();
-            x.Execute("C:\\_\\Projetos\\3 Rios\\syst\\Fgmaiss\\repo\\Emissão de Medicamentos - Almoxarifado.pdf");
+            x.Execute("..\\..\\..\\..\\..\\repo\\Emissão de Medicamentos - Almoxarifado.pdf.txt");
         }
     }
 }
