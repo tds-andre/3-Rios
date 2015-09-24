@@ -29,7 +29,7 @@ namespace Tds.Prjs.Fgmaiss.UI
         private void button2_Click(object sender, EventArgs e)
         {
             var x = new Trash.Manager();
-            x.Execute("..\\..\\..\\..\\..\\repo\\Rotas Lixo Domiciliar Três Rios.pdf");
+            x.Execute("..\\..\\..\\..\\..\\repo\\Rotas -  Varrição Equipe.pdf.txt");
         }
     }
 }
