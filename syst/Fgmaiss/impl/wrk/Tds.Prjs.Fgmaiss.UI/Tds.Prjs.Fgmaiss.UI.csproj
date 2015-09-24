@@ -82,6 +82,10 @@
       <Project>{8d975271-e86f-46f9-ab95-7b963f18d5cb}</Project>
       <Name>Tds.Prjs.Fgmaiss.ParMed</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tds.Prjs.Fgmaiss.Trash\Tds.Prjs.Fgmaiss.Trash.csproj">
+      <Project>{1cc6751b-0bd9-4a31-8a84-f064759014a3}</Project>
+      <Name>Tds.Prjs.Fgmaiss.Trash</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
