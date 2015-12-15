@@ -78,6 +78,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Tds.Prjs.Fgmaiss.ParDemission\Tds.Prjs.Fgmaiss.ParDemission.csproj">
+      <Project>{ed32a8de-a41a-4385-97cb-61180c0b9eb2}</Project>
+      <Name>Tds.Prjs.Fgmaiss.ParDemission</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tds.Prjs.Fgmaiss.ParMed\Tds.Prjs.Fgmaiss.ParMed.csproj">
       <Project>{8d975271-e86f-46f9-ab95-7b963f18d5cb}</Project>
       <Name>Tds.Prjs.Fgmaiss.ParMed</Name>

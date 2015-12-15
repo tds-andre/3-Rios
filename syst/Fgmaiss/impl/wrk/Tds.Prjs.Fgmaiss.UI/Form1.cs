@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tds.Prjs.Fgmaiss.ParMed;
 using Tds.Prjs.Fgmaiss.Trash;
+using Tds.Prjs.Fgmaiss.ParDemission;
 
 
 namespace Tds.Prjs.Fgmaiss.UI
@@ -30,6 +31,12 @@ namespace Tds.Prjs.Fgmaiss.UI
         {
             var x = new Trash.Manager();
             x.Execute("..\\..\\..\\..\\..\\repo\\Rotas -  Varrição Equipe.pdf.txt");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var x = new ParDemission.Executor();
+            x.Execute("..\\..\\..\\..\\..\\repo\\FGMAISS - Relação de Servidores Demitidos - 01_10 a 15_12_2015.pdf");
         }
     }
 }

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tds.Prjs.Fgmaiss.UI", "Tds.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tds.Prjs.Fgmaiss.Trash", "Tds.Prjs.Fgmaiss.Trash\Tds.Prjs.Fgmaiss.Trash.csproj", "{1CC6751B-0BD9-4A31-8A84-F064759014A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tds.Prjs.Fgmaiss.ParDemission", "Tds.Prjs.Fgmaiss.ParDemission\Tds.Prjs.Fgmaiss.ParDemission.csproj", "{ED32A8DE-A41A-4385-97CB-61180C0B9EB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1CC6751B-0BD9-4A31-8A84-F064759014A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CC6751B-0BD9-4A31-8A84-F064759014A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CC6751B-0BD9-4A31-8A84-F064759014A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED32A8DE-A41A-4385-97CB-61180C0B9EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED32A8DE-A41A-4385-97CB-61180C0B9EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED32A8DE-A41A-4385-97CB-61180C0B9EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED32A8DE-A41A-4385-97CB-61180C0B9EB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
