@@ -78,6 +78,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Tds.Prjs.Fgmaiss.Helper\Tds.Prjs.Fgmaiss.Helper.csproj">
+      <Project>{c90d1f51-9112-45e2-8f8f-7bda2e7740c7}</Project>
+      <Name>Tds.Prjs.Fgmaiss.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tds.Prjs.Fgmaiss.IssDebt\Tds.Prjs.Fgmaiss.IssDebt.csproj">
+      <Project>{9e25e772-3ef9-4fa4-a8dd-e63d7c0a390f}</Project>
+      <Name>Tds.Prjs.Fgmaiss.IssDebt</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tds.Prjs.Fgmaiss.ParDemission\Tds.Prjs.Fgmaiss.ParDemission.csproj">
       <Project>{ed32a8de-a41a-4385-97cb-61180c0b9eb2}</Project>
       <Name>Tds.Prjs.Fgmaiss.ParDemission</Name>

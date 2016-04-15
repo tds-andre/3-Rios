@@ -38,5 +38,29 @@ namespace Tds.Prjs.Fgmaiss.UI
             var x = new ParDemission.Executor();
             x.Execute("..\\..\\..\\..\\..\\repo\\FGMAISS - Relação de Servidores Demitidos - 01_10 a 15_12_2015.pdf");
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var x = new Convert.Iss();
+            x.Execute("..\\..\\..\\..\\..\\repo\\FGMAISS - Dívida Ativa ISS até 12_2015.pdf");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var x = new Convert.Iptu();
+            x.Execute("..\\..\\..\\..\\..\\repo\\FGMAISS - Dívida Ativa IPTU até 12_2015.pdf");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var x = new Convert.Iss();
+            x.Execute("..\\..\\..\\..\\..\\repo\\FGMAISS - Maiores Devedores de ISS 01 a 12_2015.pdf");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var x = new Convert.Iss();
+            x.Execute("..\\..\\..\\..\\..\\repo\\Relação dos Maiores Devedores - 2014 e 2015.pdf");
+        }
     }
 }

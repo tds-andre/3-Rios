@@ -54,6 +54,9 @@ namespace Tds.Prjs.Fgmaiss.ParSal.Crawlers
             ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
 
 
+            ServicePointManager.Expect100Continue = true;
+            
+
             //salva conteúdo da resposta (pdf) http em um arquivo            
             var responseStream = request.GetResponse().GetResponseStream();
             String pdfFilePath = "c:/parsal/" + servantID +  year.ToString() + ".pdf";
